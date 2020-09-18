@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%-kurumAdi%></title>
+    <!--Seo-->
+    <link rel="shortcut icon" href="/public/favicon/favicon.png" type="image/x-icon" />
+
+    <!--Bootstrap and Other Vendors-->
+    <link rel="stylesheet" href="/public/css/mpt/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/mpt/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/public/css/font-icons/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/mpt/owl.carousel.min.css">
+    <link rel="stylesheet" href="/public/css/mpt/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/mpt/flexslider.css" media="screen">
+
+    <link rel="stylesheet" type="text/css" href="/public/rs-plugin/css/settings.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <!--Mechanic Styles-->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/responsive.css">
+
+
+    <link rel="stylesheet" href="/public/js/select2/select2-bootstrap.css">
+    <link rel="stylesheet" href="/public/js/select2/select2.css">
+    <link rel="stylesheet" href="/public/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="/public/css/quill.snow.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+    <link rel="stylesheet" href="/public/css/bootstrap-select.min.css">
+    <link href="/public/css/quill.snow.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" href="vendors/rs-plugin/css/settings-ie8.css" media="screen">     
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>      
+    <![endif]-->
+
+</head>
+
+<body style="background-color:#F1F1E9 !important" class="default home2">
+
+    <nav class="navbar navbar-default navbar-static-top navbar2">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"><img height="82" width="236" src="/public/images/logo/3.png"
+                        alt=""></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav"
+                    aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-expanded="false"><span id="seciliBayrak" class="flag-icon"></span><span id="navbarDil"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#" class="langClick" name="TR"><span class="flag-icon flag-icon-tr"></span> Türkçe</a></li>
+                            <li><a href="#" class="langClick" name="EN"><span class="flag-icon flag-icon-us"></span> English</a></li>
+                            <li><a href="#" class="langClick" name="ES"><span class="flag-icon flag-icon-mx"></span> Español</a></li>
+                            <li><a href="#" class="langClick" name="FR"><span class="flag-icon flag-icon-fr"></span> Français</a></li>
+                            <li><a href="#" class="langClick" name="DE"><span class="flag-icon flag-icon-de"></span> Deutsch</a></li>
+                            <li><a href="#" class="langClick" name="IT"><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
+                            <li><a href="#" class="langClick" name="AR"><span class="flag-icon flag-icon-ae"></span> العربية</a></li>
+                            <li><a href="#" class="langClick" name="PT"><span class="flag-icon flag-icon-pt"></span> Português</a></li>
+                            <li><a href="#" class="langClick" name="RU"><span class="flag-icon flag-icon-ru"></span> Pусский</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="navbarAnasayfa" href="/"></a></li>
+                    <li><a id="navbarAyricalik" href="/"></a></li>
+                    <li><a id="navbarHakkimizda" href="/"></a></li>
+                    <li><a id="navbarOncesiSonrasi" href="/"></a></li>
+                    <li><a id="navbarBlog" href="/blog"></a></li>
+                    <li><a id="navbarIletisim" href="/"></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+    <section style="margin-top:100px;" class="row breadcrumbRow">
+        <div class="container">
+            <div class="row inner m0">
+                <a id="blogicerigiGeriBtn" href="/blog" class="view_all"></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <div style="margin-top:50px !important;" class="row m0">
+                        <div class="image_row row m0">
+                            <img id="blogImg" alt="" class="img-responsive">
+                        </div>
+                        <h1 style="color:black !important" id="baslik"></h1>
+                        <h4 style="color:black !important" id="tarih" class="row m0 meta"></h4>
+                        <div sty id="blogText"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="iletisim" class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-6 col-lg-5 footer_menuList">
+                    <div class="row menuList">
+                        <div class="heading row m0"><img style="" height="82" width="236" src="/public/images/logo/3.png" alt=""></div>
+                        <p id="footerText" class="footerText"></p>
+                        <img src="/public/images/footer/c1.png">
+                        <img src="/public/images/footer/c2.png">
+                        <img src="/public/images/footer/c3.png">
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-3 footer_address">
+                    <div class="heading row m0"></div>
+                    <div class="row address m0">
+                        <div class="media address_line">
+                            <div class="media-left icon"><i style="color: #DAD370 !important;"
+                                    class="fa fa-envelope"></i></div>
+                            <div class="media-body address_text" style="color: #F7F7EB !important;"><a style="color: #F7F7EB !important;" href="mailto:<%-eposta%>"><%-eposta%> </a></div>
+                        </div>
+                        <div class="media address_line">
+                            <div class="media-left icon"><i style="color: #DAD370 !important;" class="fa fa-phone"></i>
+                            </div>
+                            <div class="media-body address_text"><a style="color: #F7F7EB !important;"
+                                    title="contact number" rel="nofollow" name="<%-telefon%>"
+                                    href="tel://90<%-telefon%>">
+                                    +90 <%-telefon%></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 newsletter">
+                    <div class="heading row m0">
+                        <h2 id="footerHeaderIletisim" style="color: #F7F7EB !important;"></h2>
+                    </div>
+                    <form action="#" class="row m0 appointment_home_form2 newsletter_form2">
+                        <div class="form_inputs row m0">
+                            <div class="row m0 input_row">
+                                <div style="border:none !important" class="col-xs-6 p0">
+                                    <label id="footerLabel1" style="color: #DAD701 !important;" for="contactNameInput"></label>
+                                    <input id="footerInputAd" type="text" class="form-control" id="contactNameInput" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row m0 input_row">
+                                <div style="border:none !important" class="col-xs-6 p0">
+                                    <label id="footerLabel2" style="color: #DAD701 !important;" for="contactTelInput"></label>
+                                    <input id="footerInputTelefon" type="text" class="form-control" id="contactTelInput" placeholder="">
+                                </div>
+                            </div>
+                            <input id="contactInfoBtn" type="button" class="form-control frmBtn" value="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row m0 footer_bottom">
+                <ul class="list-inline social_menu m0 fleft">
+                    <li><a href="<%-facebook%>"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="<%-instagram%>"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="<%-youtube%>"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+                <div style="color:#dad370" class="fright copyright">&copy; <a style="color:#dad370"
+                        href="/">Alperen Nacak 2010</a>. <label id="footerLabelTumHaklar"></label></div>
+            </div>
+        </div>
+    </footer>
+    <div data-disable="disabled" style="display:none;" id="quills"></div>
+
+    <!--jQuery, Bootstrap and other vendor JS-->
+
+    <!--jQuery-->
+    <script src="/public/js/jquery-1.11.3.min.js"></script>
+
+    <!--Bootstrap JS-->
+    <script src="/public/js/bootstrap.min.js"></script>
+
+    <!--Owl Carousel-->
+    <script src="/public/js/owl.carousel.min.js"></script>
+
+    <!--Counter Up-->
+    <script src="/public/js/jquery.counterup.min.js"></script>
+
+    <!--Waypoints-->
+    <script src="/public/js/jquery.waypoints.min.js"></script>
+
+    <!--FlexSlider-->
+    <script src="/public/js/jquery.flexslider.js"></script>
+
+    <script src="/public/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="/public/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/cookies.min.js"></script>
+    <script src="/public/js/bootstrap-select.min.js"></script>
+    <script src="/public/js/intlTelInput.js"></script>
+    <script src="/public/js/system/library/quill.js"></script>
+    <script src="/public/js/system/homeLang.js"></script>
+
+    <!--Strella JS-->
+    <script src="/public/js/theme.js"></script>
+    <script src="/public/js/revs.js"></script>
+    <script src="/public/js/system/library/quill.js"></script>
+    <script src="/public/js/system/library/moment.min.js"></script>
+    <script src="/public/js/system/main.js"></script>
+    <script>
+    let blogText = <%-JSON.stringify(blogYazisi)%>;
+    let BlogsLang = navigator.language || navigator.userLanguage;
+    let lang = Cookies.get('lang');
+    if (!Cookies.get('lang')) {
+        if (BlogsLang == 'tr') {
+            Cookies.set('lang', 'TR');
+            currentLang = 'TR';
+        }
+        else if (BlogsLang == 'en') {
+            Cookies.set('lang', 'EN');
+            currentLang = 'EN';
+        }
+        else if (BlogsLang == 'ru') {
+            Cookies.set('lang', 'RU');
+            currentLang = 'RU';
+        }
+        else if (BlogsLang == 'fr') {
+            Cookies.set('lang', 'FR');
+            currentLang = 'FR';
+        }
+        else if (BlogsLang == 'ar') {
+            Cookies.set('lang', 'AR');
+            currentLang = 'AR';
+        }
+        else if (BlogsLang == 'pt') {
+            Cookies.set('lang', 'PT');
+            currentLang = 'PT';
+        }
+        else if (BlogsLang == 'it') {
+            Cookies.set('lang', 'IT');
+            currentLang = 'IT';
+        }
+        else if (BlogsLang == 'de') {
+            Cookies.set('lang', 'DE');
+            currentLang = 'DE';
+        }
+        else if (BlogsLang == 'es') {
+            Cookies.set('lang', 'ES');
+            currentLang = 'ES';
+        }
+        else {
+            Cookies.set('lang', 'TR');
+            currentLang = 'TR';
+        };
+    };
+    function quillGetHTML(inputDelta) {
+        var tempCont = document.createElement("div");
+        (new Quill(tempCont)).setContents(inputDelta);
+        return tempCont.getElementsByClassName("ql-editor")[0].innerHTML;
+    }
+    let quill = new Quill("#quills", {
+        theme: 'snow',
+        disable:true,
+        readOnly:true,
+        scrollingContainer: false
+    });
+    $("#blogImg").attr("src",blogText.gorsel);
+    $("#tarih").text(moment(Date.parse(blogText.createDate)).format("DD/MM/YYYY"));
+    $("#baslik").text((lang == 'TR' ? blogText.baslikTR : (lang == 'EN' ? blogText.baslikEN : (lang == 'ES' ? blogText.baslikES : (lang == 'FR' ? blogText.baslikFR : (lang == 'DE' ? blogText.baslikDE : (lang == 'IT' ? blogText.baslikIT : (lang == 'AR' ? blogText.baslikAR : (lang == 'PT' ? blogText.baslikPT :blogText.baslikRU)))))))));
+    $("#blogText").html(quillGetHTML(quill.setContents((lang == 'TR' ? blogText.yaziTR : (lang == 'EN' ? blogText.yaziEN : (lang == 'ES' ? blogText.yaziES : (lang == 'FR' ? blogText.yaziFR : (lang == 'DE' ? blogText.yaziDE : (lang == 'IT' ? blogText.yaziIT : (lang == 'AR' ? blogText.yaziAR : (lang == 'PT' ? blogText.yaziPT : blogText.yaziRU)))))))))));
+    $("#quills").remove();
+    $(".ql-toolbar").remove();
+</script>
+</body>
+
+</html>

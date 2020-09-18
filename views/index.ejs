@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%-kurumAdi%></title>
+    <!--Seo-->
+    <link rel="shortcut icon" href="/public/favicon/favicon.png" type="image/x-icon" />
+
+    <!--Bootstrap and Other Vendors-->
+    <link rel="stylesheet" href="/public/css/mpt/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/mpt/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/public/css/font-icons/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/mpt/owl.carousel.min.css">
+    <link rel="stylesheet" href="/public/css/mpt/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/mpt/flexslider.css" media="screen">
+
+    <link rel="stylesheet" type="text/css" href="/public/rs-plugin/css/settings.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <!--Mechanic Styles-->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/responsive.css">
+
+
+    <link rel="stylesheet" href="/public/js/select2/select2-bootstrap.css">
+    <link rel="stylesheet" href="/public/js/select2/select2.css">
+    <link rel="stylesheet" href="/public/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="/public/css/quill.snow.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+    <link rel="stylesheet" href="/public/css/bootstrap-select.min.css">
+
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" href="vendors/rs-plugin/css/settings-ie8.css" media="screen">     
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>      
+    <![endif]-->
+
+</head>
+
+<body style="background-color:#F1F1E9 !important" class="default home2">
+
+    <section id="anasayfa" class="row top_bar">
+        <div class="container">
+            <div class="row m0">
+                <div class="fleft schedule"><strong><i class="fa fa-check"></i></strong><span id="headerCheckText"></span></div>
+                <div class="fright contact_info">
+                    <div class="fleft email"><img src="/public/images/icons/envelope.jpg" alt=""> <%-eposta%></div>
+                    <div class="fleft phone"><i class="fa fa-phone"></i> <strong><a title="contact number"
+                                rel="nofollow" id="phoneNumber" name="<%-telefon%>" href="tel://90<%-telefon%>">
+                                +90 <%-telefon%></a></strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-default navbar-static-top navbar2">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"><img height="82" width="236" src="/public/images/logo/3.png"
+                        alt=""></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav"
+                    aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-expanded="false"><span id="seciliBayrak" class="flag-icon"></span><span id="navbarDil"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#" class="langClick" name="TR"><span class="flag-icon flag-icon-tr"></span> Türkçe</a></li>
+                            <li><a href="#" class="langClick" name="EN"><span class="flag-icon flag-icon-us"></span> English</a></li>
+                            <li><a href="#" class="langClick" name="ES"><span class="flag-icon flag-icon-mx"></span> Español</a></li>
+                            <li><a href="#" class="langClick" name="FR"><span class="flag-icon flag-icon-fr"></span> Français</a></li>
+                            <li><a href="#" class="langClick" name="DE"><span class="flag-icon flag-icon-de"></span> Deutsch</a></li>
+                            <li><a href="#" class="langClick" name="IT"><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
+                            <li><a href="#" class="langClick" name="AR"><span class="flag-icon flag-icon-ae"></span> العربية</a></li>
+                            <li><a href="#" class="langClick" name="PT"><span class="flag-icon flag-icon-pt"></span> Português</a></li>
+                            <li><a href="#" class="langClick" name="RU"><span class="flag-icon flag-icon-ru"></span> Pусский</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="navbarAnasayfa" href="#anasayfa" class="navigators"></a></li>
+                    <li><a id="navbarAyricalik" href="#ayricaliklarimiz" class="navigators"></a></li>
+                    <li><a id="navbarHakkimizda" href="#hakkimizda" class="navigators"></a></li>
+                    <li><a id="navbarOncesiSonrasi" href="#oncesisonrasi" class="navigators"></a></li>
+                    <li><a id="navbarBlog" href="/blog"></a></li>
+                    <li><a id="navbarIletisim" href="#iletisim" class="navigators"></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+    <section class="row abaout_alperen_hair">
+        <div class="container">
+            <div class="row container_area">
+                <div class="col-sm-5 trusted_area">
+                    <div class="row m0 inner">
+                        <h4 id="bannerh4"></h4>
+                        <h2 id="bannerh2"></h2>
+                        <ul class="list-unstyled" style="color: black !important;">
+                            <li><i style="font-size: 18px; color: black;" class="fa fa-check-square"></i>
+                            <span id="bannerSonTeknoloji"></span></li>
+                            <li><i style="font-size: 18px; color: black;" class="fa fa-check-square"></i>
+                            <span id="bannerAtes"></span></li>
+                            <li><i style="font-size: 18px; color: black;" class="fa fa-check-square"></i>
+                            <span id="bannerAlet"></span></li>
+                            <li><i style="font-size: 18px; color: black;" class="fa fa-check-square"></i>
+                            <span id="bannerMaske"></span></li>
+                            <li><i style="font-size: 18px; color: black;" class="fa fa-check-square"></i>
+                            <span id="bannerDezenfeksiyon"></span></li>
+                            <li><i style="font-size: 18px; color: black;" class="fa fa-check-square"></i>
+                            <span id="bannerCovid19"></span></li>
+                            <li><i style="font-size: 18px; color: black;" class="fa fa-check-square"></i>
+                            <span id="bannerArac"></span></li>
+                            <li><i style="font-size: 18px; color: black;" class="fa fa-check-square"></i>
+                            <span id="bannerHijyen"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row quick_blocks_row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 quick_block emmergency">
+                    <div class="row m0 inner">
+                        <div class="row heading m0">
+                            <h5 id="postiph51"></h5>
+                            <h3 id="postiph31"></h3>
+                        </div>
+                        <p id="postipText1"></p>
+                        <a id="postipA1" href="#ayricaliklarimiz" class="navigators"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 quick_block branches">
+                    <div class="row m0 inner">
+                        <div class="row heading m0">
+                            <h5 id="postiph52"></h5>
+                            <h3 id="postiph32"></h3>
+                        </div>
+                        <p id="postipText2"></p>
+                        <a id="postipA2" href="#oncesisonrasi" class="navigators"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 quick_block bill_payments">
+                    <div class="row m0 inner">
+                        <div class="row heading m0">
+                            <h5 id="postiph53"></h5>
+                            <h3 id="postiph33"></h3>
+                        </div>
+                        <p id="postipText3"></p>
+                        <a id="postipA3" href="#hakkimizda" class="navigators"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ayricaliklarimiz" class="row service_tab">
+        <div class="container">
+            <div class="row titleRow">
+                <h2 id="ayricaliklarimizH2"></h2>
+            </div>
+            <div class="row">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-justified" role="tablist" id="service_tab">
+                    <li role="presentation" class="active">
+                    <a href="#heart_surgery" aria-controls="heart_surgery" role="tab" data-toggle="tab"><span></span>
+                    <label id="ayricaliklarimizSonTeknoloji"></label> </a></li>
+                    <li role="presentation"><a href="#dna_testing" aria-controls="dna_testing" role="tab"
+                            data-toggle="tab"><span></span>
+                    <label id="ayricaliklarimizVipHizmet"></label></a></li>
+                    <li role="presentation"><a href="#gen_treatment" aria-controls="gen_treatment" role="tab"
+                            data-toggle="tab"><span></span>
+                    <label id="ayricaliklarimizMemnuniyet"></label></a></li>
+                    <li role="presentation"><a href="#emergency_care" aria-controls="emergency_care" role="tab"
+                            data-toggle="tab"><span></span>
+                    <label id="ayricaliklarimizLuksOtel"></label></a></li>
+                    <li role="presentation"><a href="#ear_treatment" aria-controls="ear_treatment" role="tab"
+                            data-toggle="tab"><span></span>
+                    <label id="ayricaliklarimizOzelDanisman"></label></a></li>
+                    <li role="presentation"><a href="#dental_care" aria-controls="dental_care" role="tab"
+                            data-toggle="tab"><span></span>
+                    <label id="ayricaliklarimizTransferHizmeti"></label></a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="heart_surgery">
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <img src="/public/images/pages/service/tab.jpg" alt="" class="img-responsive">
+                                <div id="ayricaliklarimizTextHead1" class="ts"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <h3 id="ayricaliklarimizh31"></h3>
+                                <p id="ayricaliklarimizTex1"></p>
+                                <a href="#iletisim" class="navigators view_all ayricaliklarimizIletisimBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="dna_testing">
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <img src="/public/images/pages/service/vip.jpg" alt="" class="img-responsive">
+                                <div id="ayricaliklarimizTextHead2" class="ts"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <h3 id="ayricaliklarimizh32"></h3>
+                                <p id="ayricaliklarimizTex2"></p>
+                                <a href="#iletisim" class="navigators view_all ayricaliklarimizIletisimBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="gen_treatment">
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <img src="/public/images/pages/service/memnuniyet.jpg" alt="" class="img-responsive">
+                                <div id="ayricaliklarimizTextHead3" class="ts"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <h3 id="ayricaliklarimizh33"></h3>
+                                <p id="ayricaliklarimizTex3"></p>
+                                <a href="#iletisim" class="navigators view_all ayricaliklarimizIletisimBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="emergency_care">
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <img src="/public/images/pages/service/hotel.jpg" alt="" class="img-responsive">
+                                <div id="ayricaliklarimizTextHead4" class="ts"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <h3 id="ayricaliklarimizh34"></h3>
+                                <p id="ayricaliklarimizTex4"></p>
+                                <a href="#iletisim" class="navigators view_all ayricaliklarimizIletisimBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="ear_treatment">
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <img src="/public/images/pages/service/danisman.jpg" alt="" class="img-responsive">
+                                <div id="ayricaliklarimizTextHead5" class="ts"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <h3 id="ayricaliklarimizh35"></h3>
+                                <p id="ayricaliklarimizTex5"></p>
+                                <a href="#iletisim" class="navigators view_all ayricaliklarimizIletisimBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="dental_care">
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <img src="/public/images/pages/service/transfer.jpg" alt="" class="img-responsive">
+                                <div id="ayricaliklarimizTextHead6" class="ts"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row m0">
+                                <h3 id="ayricaliklarimizh36"></h3>
+                                <p id="ayricaliklarimizTex6"></p>
+                                <a href="#iletisim" class="navigators view_all ayricaliklarimizIletisimBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hakkimizda" class="row alperen_nacak_hakkinda alperen_nacak_hakkinda2">
+        <div class="container">
+            <div class="row titleRow">
+                <h3 id="hakkimizdaMainh3"></h3>
+                <h2 id="hakkimizdaMainh2"></h2>
+            </div>
+            <div class="row">
+                <ul class="nav nav-tabs department_tab" role="tablist">
+                    <li role="presentation" class="active"><a id="hakkimizdaText" href="#dept1" aria-controls="dept1" role="tab" data-toggle="tab"></a></li>
+                    <li role="presentation"><a id="hakkimizdaFue" href="#dept2" aria-controls="dept2" role="tab" data-toggle="tab"></a></li>
+                    <li role="presentation"><a id="hakkimizdaSafir" href="#dept3" aria-controls="dept3" role="tab" data-toggle="tab"></a></li>
+                    <li role="presentation"><a id="hakkimizdaBuz" href="#dept4" aria-controls="dept4" role="tab" data-toggle="tab"></a></li>
+                    <li role="presentation"><a id="hakkimizdaDhi" href="#dept5" aria-controls="dept5" role="tab" data-toggle="tab"></a></li>
+                    <li role="presentation"><a id="hakkimizdaAgrisiz" href="#dept6" aria-controls="dept6" role="tab" data-toggle="tab"></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="dept1">
+                        <div class="row m0 alperen_hakkinda">
+                            <div class="row m0 inner">
+                                <div class="col-sm-12 col-md-6 img">
+                                    <div class="row">
+                                        <img src="/public/images/pages/about/2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 content">
+                                    <div class="row">
+                                        <h3 id="hakkimizdaSubH31"></h3>
+                                        <p id="hakkimizdaSubText1" style="font-size:18px"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="dept2">
+                        <div class="row m0 alperen_hakkinda">
+                            <div class="row m0 inner">
+                                <div class="col-sm-12 col-md-6 img">
+                                    <div class="row">
+                                        <img src="/public/images/pages/about/fue.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 content">
+                                    <div class="row">
+                                        <h3 id="hakkimizdaSubH32"></h3>
+                                        <p id="hakkimizdaSubText2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="dept3">
+                        <div class="row m0 alperen_hakkinda">
+                            <div class="row m0 inner">
+                                <div class="col-sm-12 col-md-6 img">
+                                    <div class="row">
+                                        <img src="/public/images/pages/about/safir.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 content">
+                                    <div class="row">
+                                        <h3 id="hakkimizdaSubH33"></h3>
+                                        <p id="hakkimizdaSubText3"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="dept4">
+                        <div class="row m0 alperen_hakkinda">
+                            <div class="row m0 inner">
+                                <div class="col-sm-12 col-md-6 img">
+                                    <div class="row">
+                                        <img src="/public/images/pages/about/buz.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 content">
+                                    <div class="row">
+                                        <h3 id="hakkimizdaSubH34"></h3>
+                                        <p id="hakkimizdaSubText4"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="dept5">
+                        <div class="row m0 alperen_hakkinda">
+                            <div class="row m0 inner">
+                                <div class="col-sm-12 col-md-6 img">
+                                    <div class="row">
+                                        <img src="/public/images/pages/about/dhi.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 content">
+                                    <div class="row">
+                                        <h3 id="hakkimizdaSubH35"></h3>
+                                        <p id="hakkimizdaSubText5"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="dept6">
+                        <div class="row m0 alperen_hakkinda">
+                            <div class="row m0 inner">
+                                <div class="col-sm-12 col-md-6 img">
+                                    <div class="row">
+                                        <img src="/public/images/pages/about/agrisiz.png" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 content">
+                                    <div class="row">
+                                        <h3 id="hakkimizdaSubH36"></h3>
+                                        <p id="hakkimizdaSubText6"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="oncesisonrasi" class="row team_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-3 team_menu">
+                    <div class="row titleRow text-left">
+                        <h5 id="oncesiSonrasiMainh5"></h5>
+                        <h2 id="oncesiSonrasiMainh2"></h2>
+                    </div>
+                    <div class="row">
+                        <!-- Nav tabs -->
+                        <ul id="ulTablist" class="nav nav-tabs" role="tablist"></ul>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-9 team_descss">
+                    <div class="row">
+                        <div id="divTabpanel" class="tab-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: black !important;" class="row recentpost_acc recentpost_acc2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 testimonial_section">
+                    <div class="inner row m0">
+                        <div class="row m0 titleRow text-left">
+                            <h5 id="oncesiSonrasiSubH5" style="color:#F7F7EB !important"></h5>
+                            <h2 id="oncesiSonrasiSubH2"style="color:#F7F7EB !important"></h2>
+                        </div>
+                        <div class="flexslider testimonial_slider">
+                            <ul class="slides">
+                                <li>
+                                    <div class="row m0 recent_post testi_content">
+                                        <div class="row m0 inner">
+                                            <div class="postText1 row m0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row m0 recent_post testi_content">
+                                        <div class="row m0 inner">
+                                            <div class="postText2 row m0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row m0 recent_post testi_content">
+                                        <div class="row m0 inner">
+                                            <div class="postText3 row m0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 recent_post_home">
+                    <div class="row m0 titleRow text-left">
+                        <h5 id="oncesiSonrasiSubH51" style="color:#F7F7EB !important"></h5>
+                        <h2 id="oncesiSonrasiSubH51" style="color:#F7F7EB !important"></h2>
+                    </div>
+                    <div id="twoBlogs" class="row m0">
+                    </div>
+                    <a id="oncesiSonrasiDigerText" href="/blog" class="view_all"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer id="iletisim" class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-6 col-lg-5 footer_menuList">
+                    <div class="row menuList">
+                        <div class="heading row m0"><img style="" height="82" width="236" src="/public/images/logo/3.png" alt=""></div>
+                        <p id="footerText" class="footerText"></p>
+                        <img src="/public/images/footer/c1.png">
+                        <img src="/public/images/footer/c2.png">
+                        <img src="/public/images/footer/c3.png">
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-3 footer_address">
+                    <div class="heading row m0"></div>
+                    <div class="row address m0">
+                        <div class="media address_line">
+                            <div class="media-left icon"><i style="color: #DAD370 !important;"
+                                    class="fa fa-envelope"></i></div>
+                            <div class="media-body address_text" style="color: #F7F7EB !important;"><a style="color: #F7F7EB !important;" href="mailto:<%-eposta%>"><%-eposta%> </a></div>
+                        </div>
+                        <div class="media address_line">
+                            <div class="media-left icon"><i style="color: #DAD370 !important;" class="fa fa-phone"></i>
+                            </div>
+                            <div class="media-body address_text"><a style="color: #F7F7EB !important;"
+                                    title="contact number" rel="nofollow" name="<%-telefon%>"
+                                    href="tel://90<%-telefon%>">
+                                    +90 <%-telefon%></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 newsletter">
+                    <div class="heading row m0">
+                        <h2 id="footerHeaderIletisim" style="color: #F7F7EB !important;"></h2>
+                    </div>
+                    <form action="#" class="row m0 appointment_home_form2 newsletter_form2">
+                        <div class="form_inputs row m0">
+                            <div class="row m0 input_row">
+                                <div style="border:none !important" class="col-xs-6 p0">
+                                    <label id="footerLabel1" style="color: #DAD701 !important;" for="contactNameInput"></label>
+                                    <input id="footerInputAd" type="text" class="form-control" id="contactNameInput" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row m0 input_row">
+                                <div style="border:none !important" class="col-xs-6 p0">
+                                    <label id="footerLabel2" style="color: #DAD701 !important;" for="contactTelInput"></label>
+                                    <input id="footerInputTelefon" type="text" class="form-control" id="contactTelInput" placeholder="">
+                                </div>
+                            </div>
+                            <input id="contactInfoBtn" type="button" class="form-control frmBtn" value="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row m0 footer_bottom">
+                <ul class="list-inline social_menu m0 fleft">
+                    <li><a href="<%-facebook%>"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="<%-instagram%>"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="<%-youtube%>"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+                <div style="color:#dad370" class="fright copyright">&copy; <a style="color:#dad370"
+                        href="/">Alperen Nacak 2010</a>. <label id="footerLabelTumHaklar"></label></div>
+            </div>
+        </div>
+    </footer>
+
+    <div data-disable="disabled" style="display:none;" id="quills"></div>
+    <a title="whatsapp" rel="nofollow"
+        href="https://api.whatsapp.com/send?phone=90<%-telefon%>&text=Merhaba, Bilgi almak istiyorum." class="float"
+        target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <div style="display:none" id="analiz" class="analizwizard bg-gray">
+        <i id="hideShowAnaliz" class="fa fa-chevron-down"></i>
+        <div style="display:inline" id="step1">
+            <div id="step1Header">
+                <button id="oneMinuteAnalizOpened" class="analizHeader"></button>
+            </div>
+            <div id="step1">
+                <img class="genderImg genderMale rounded-circle" src="/public/images/home/analizMan.png" alt="person male" />
+                <img class="genderImg genderWoman rounded-circle" src="/public/images/home/analizWoman.png" alt="person women" />
+                <p id="step1Text"></p>
+            </div>
+        </div>
+        <div style="display:none" id="headerAnaliz1">
+            <h4 id="headerAnaliz1H4" class="headerDokulme"></h4>
+            <hr>
+        </div>
+        <div id="step2" class="col-md-12" style="display: none;">
+            <div class="dokulmeErkek">
+                <img class="selectTip" src="/public/images/home/male/12x.png" alt="hair loss type man"/>
+                <img class="selectTip" src="/public/images/home/male/22x.png" alt="hair loss type man" />
+                <img class="selectTip" src="/public/images/home/male/32x.png" alt="hair loss type man" />
+            </div>
+            <div class="dokulmeErkek">
+                <img class="selectTip" src="/public/images/home/male/42x.png" alt="hair loss type man" />
+                <img class="selectTip" src="/public/images/home/male/52x.png" alt="hair loss type man" />
+                <img class="selectTip" src="/public/images/home/male/62x.png" alt="hair loss type man" />
+            </div>
+            <div class="dokulmeErkek">
+                <img class="selectTip" src="/public/images/home/male/72x.png" alt="hair loss type man" />
+                <img class="selectTip" src="/public/images/home/male/82x.png" alt="hair loss type man" />
+                <img class="selectTip" src="/public/images/home/male/92x.png" alt="hair loss type man" />
+            </div>
+            <div style="display:inline" class="dokulmeKadin">
+                <img class="selectTip" src="/public/images/home/female/12x.png" alt="hair loss type female" />
+                <img class="selectTip" src="/public/images/home/female/22x.png" alt="hair loss type female" />
+                <img class="selectTip" src="/public/images/home/female/32x.png" alt="hair loss type female" />
+            </div>
+            <div style="display:inline" class="dokulmeKadin">
+                <img class="selectTip" src="/public/images/home/female/42x.png" alt="hair loss type female" />
+                <img class="selectTip" src="/public/images/home/female/52x.png" alt="hair loss type female" />
+                <img class="selectTip" src="/public/images/home/female/62x.png" alt="hair loss type female" />
+            </div>
+            <div id="prevButtons">
+                <button class="bottom-left prevBtn" name="goTo1"></button>
+                <button id="notSureBtn"></button>
+            </div>
+        </div>
+        <div style="display:none" id="headerAnaliz2" class="headerAnaliz">
+            <h4 id="yasH4" class="headerYas"></h4>
+            <hr>
+        </div>
+        <div id="step3" style="display: none;">
+            <button class="yasBtn">18-25</button>
+            <button class="yasBtn">26-35</button>
+            <button class="yasBtn">36-45</button>
+            <button class="yasBtn">45+</button>
+        </div>
+        <div style="display: none;" id="prevButtons1" class="prevButtons">
+            <button class="bottom-left prevBtn"></button>
+        </div>
+        <div style="display:none" id="headerAnaliz3" class="headerAnaliz">
+            <h4 id="ilacH4"></h4>
+            <hr>
+        </div>
+        <div id="step4" style="display: none;">
+            <button id="ilacHayirBtn" class="yasBtn"></button>
+            <button id="ilacEvetBtn" class="yasBtn"></button>
+            <input id="ilacEvet" maxlength="100" class="ilacInput input-spinner" placeholder="" type="text" />
+            <button id="ilacInputEvet" class="nextBtn1"></button>
+        </div>
+        <div style="display: none;" id="prevButtons2" class="prevButtons">
+            <button class="bottom-left prevBtn"></button>
+        </div>
+        <div style="display:none" id="headerAnaliz4" class="headerAnaliz">
+            <h4 id="hastalikH4" class="headerYas"></h4>
+            <hr>
+        </div>
+        <div id="step5" style="display: none;">
+            <button id="btnHIV" class="yasBtn2"></button>
+            <button id="btnHepatit" class="yasBtn2"></button>
+            <button id="btnKalp" class="yasBtn2"></button>
+            <button id="btnHastalikYok" class="yasBtn2"></button>
+        </div>
+        <div style="display: none;" id="prevButtons3">
+            <button class="bottom-left prevBtn" name="goTo4"></button>
+        </div>
+        <div style="display:none" id="headerAnaliz5" class="headerAnaliz">
+            <h4 id="analizH3" class="headerYas"></h4>
+            <hr>
+        </div>
+        <div id="step6" style="display: none;">
+            <input id="phoneInput" class="ilacInput" placeholder="" type="text" />
+            <input id="analizInputNameSurname" class="ilacInput input-spinner" placeholder="" type="text" />
+            <input id="analizInputMail" class="ilacInput input-spinner" placeholder="" type="email" />
+            <button id="completeBtn"></button>
+        </div>
+        <div style="display: none;" id="prevButtons4">
+            <button class="bottom-left prevBtn" name="goTo5"></button>
+        </div>
+        <div style="display:none" id="headerAnaliz6" class="headerAnaliz">
+            <h4 id="analizSuccess" class="headerYas"></h4>
+            <hr>
+        </div>
+        <div id="step7" style="display: none;">
+            <p id="completeText"></p>
+            <button id="closeBtn"></button>
+        </div>
+    </div>
+    <button style="display:inline"  class="analizHeader2"><img src="/public/images/baldMan.png"/> <span id="oneMinuteAnalizClosed"></span></button>
+
+
+
+    <!--jQuery, Bootstrap and other vendor JS-->
+
+    <!--jQuery-->
+    <script src="/public/js/jquery-1.11.3.min.js"></script>
+
+    <!--Bootstrap JS-->
+    <script src="/public/js/bootstrap.min.js"></script>
+
+    <!--Owl Carousel-->
+    <script src="/public/js/owl.carousel.min.js"></script>
+
+    <!--Counter Up-->
+    <script src="/public/js/jquery.counterup.min.js"></script>
+
+    <!--Waypoints-->
+    <script src="/public/js/jquery.waypoints.min.js"></script>
+
+    <!--FlexSlider-->
+    <script src="/public/js/jquery.flexslider.js"></script>
+
+    <script src="/public/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="/public/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/cookies.min.js"></script>
+    <script src="/public/js/bootstrap-select.min.js"></script>
+    <script src="/public/js/intlTelInput.js"></script>
+    <script src="/public/js/system/library/quill.js"></script>
+    <script src="/public/js/system/homeLang.js"></script>
+    <script src="/public/js/jquery.easing.1.3.js"></script>
+
+    <!--Strella JS-->
+    <script src="/public/js/theme.js"></script>
+    <script src="/public/js/revs.js"></script>
+    <script src="/public/js/system/main.js"></script>
+
+    <script>
+        // Saç Ekimine Dair
+        let slidersLang = navigator.language || navigator.userLanguage;
+        if (!Cookies.get('lang')) {
+            if (slidersLang == 'tr') {
+                Cookies.set('lang', 'TR');
+                currentLang = 'TR';
+            }
+            else if (slidersLang == 'en') {
+                Cookies.set('lang', 'EN');
+                currentLang = 'EN';
+            }
+            else if (slidersLang == 'ru') {
+                Cookies.set('lang', 'RU');
+                currentLang = 'RU';
+            }
+            else if (slidersLang == 'fr') {
+                Cookies.set('lang', 'FR');
+                currentLang = 'FR';
+            }
+            else if (slidersLang == 'ar') {
+                Cookies.set('lang', 'AR');
+                currentLang = 'AR';
+            }
+            else if (slidersLang == 'pt') {
+                Cookies.set('lang', 'PT');
+                currentLang = 'PT';
+            }
+            else if (slidersLang == 'it') {
+                Cookies.set('lang', 'IT');
+                currentLang = 'IT';
+            }
+            else if (slidersLang == 'de') {
+                Cookies.set('lang', 'DE');
+                currentLang = 'DE';
+            }
+            else if (slidersLang == 'es') {
+                Cookies.set('lang', 'ES');
+                currentLang = 'ES';
+            }
+            else {
+                Cookies.set('lang', 'TR');
+                currentLang = 'TR';
+            };
+        };
+        let sliders = <%-JSON.stringify(slider)%>;
+        let lang = Cookies.get('lang');
+        for (let i = 0; i < sliders.length; i++) {
+            $("#ulTablist").append(`
+                <li role="presentation" class="media `+(i == 0 ? 'active' : '')+`">
+                    <a href="#doctor`+i+`" aria-controls="doctor`+i+`" role="tab" data-toggle="tab">
+                        <div class="media-left"><img class="img-circle" height="42" width="42" src="`+ sliders[i].hastaGorsel + `" alt=""></div>
+                            <div class="media-body media-middle">
+                                <h5>`+ sliders[i].hastaAdi + `</h5>
+                            </div>
+                    </a>
+                </li>
+            `);
+        };
+        
+        for (let i = 0; i < sliders.length; i++) {
+            $("#divTabpanel").append(`
+            <div role="tabpanel" class="tab-pane media `+(i == 0 ? 'active' : '')+`" id="doctor`+i+`">
+                <div class="media-left media-bottom">
+                    <a href="#"><img src="`+ sliders[i].gorsel + `" alt="saç ekim öncesi sonrası" class="img-responsive"></a>
+                </div>
+                <div class="media-body">
+                    <div class="row titleRow text-left">
+                        <h2>`+ sliders[i].hastaAdi + `</h2>
+                    </div>
+                    <p>`+(lang == 'TR' ? sliders[i].yaziTR : (lang == 'EN' ? sliders[i].yaziEN : (lang == 'ES' ? sliders[i].yaziES : (lang == 'FR' ? sliders[i].yaziFR : (lang == 'DE' ? sliders[i].yaziDE : (lang == 'IT' ? sliders[i].yaziIT : (lang == 'AR' ? sliders[i].yaziAR : (lang == 'PT' ? sliders[i].yaziPT : sliders[i].yaziRU))))))))+`</p>
+                </div>
+            </div>
+            `);
+        };
+        let blogs = <%-JSON.stringify(blog)%>;
+        for (let i = 0; i < 2; i++) {
+            let quill = new Quill("#quills", {
+                theme: 'snow',
+                disable:true
+            });
+            quill.setContents((lang == 'TR' ? blogs[(blogs.length-(i+1))].yaziTR : (lang == 'EN' ? blogs[(blogs.length-(i+1))].yaziEN : (lang == 'ES' ? blogs[(blogs.length-(i+1))].yaziES : (lang == 'FR' ? blogs[(blogs.length-(i+1))].yaziFR : (lang == 'DE' ? blogs[(blogs.length-(i+1))].yaziDE : (lang == 'IT' ? blogs[(blogs.length-(i+1))].yaziIT : (lang == 'AR' ? blogs[(blogs.length-(i+1))].yaziAR : (lang == 'PT' ? blogs[(blogs.length-(i+1))].yaziPT : blogs[(blogs.length-(i+1))].yaziRU)))))))));
+            
+            $("#twoBlogs").append(`
+                <div class="media">
+                    <div class="media-left">
+                        <a id="`+blogs[(blogs.length-(i+1))]._id+`" href="/blogicerigi"><img height="128" width="128" src="`+blogs[(blogs.length-(i+1))].gorsel+`" alt=""
+                                class="img-reponsive"></a>
+                    </div>
+                    <div class="media-body">
+                        <a id="`+blogs[(blogs.length-(i+1))]._id+`" href="/blogicerigi">
+                            <h4 style="color:#DAD370">` + (lang == 'TR' ? blogs[(blogs.length-(i+1))].baslikTR : (lang == 'EN' ? blogs[(blogs.length-(i+1))].baslikEN : (lang == 'ES' ? blogs[(blogs.length-(i+1))].baslikES : (lang == 'FR' ? blogs[(blogs.length-(i+1))].baslikFR : (lang == 'DE' ? blogs[(blogs.length-(i+1))].baslikDE : (lang == 'IT' ? blogs[(blogs.length-(i+1))].baslikIT : (lang == 'AR' ? blogs[(blogs.length-(i+1))].baslikAR : (lang == 'PT' ? blogs[(blogs.length-(i+1))].baslikPT :blogs[(blogs.length-(i+1))].baslikRU)))))))) + `</h4>
+                        </a>
+                        <p style="color: #F7F7EB;">`+quill.getText(0,50)+`...</p>
+                    </div>
+                </div>
+            `);
+            $(".ql-toolbar").remove();
+        };
+        $(".howBlogText").click(function () {
+            let blogID = $(this).attr("id");
+            Cookies.set("blogID",blogID);
+        });
+    </script>
+</body>
+
+</html>
