@@ -778,33 +778,36 @@
             `);
         };
         let blogs = <%-JSON.stringify(blog)%>;
-        for (let i = 0; i < 2; i++) {
-            let quill = new Quill("#quills", {
-                theme: 'snow',
-                disable:true
+        if(blogs.length >= 2)
+        {
+            for (let i = 0; i < 2; i++) {
+                let quill = new Quill("#quills", {
+                    theme: 'snow',
+                    disable:true
+                });
+                quill.setContents((lang == 'TR' ? blogs[(blogs.length-(i+1))].yaziTR : (lang == 'EN' ? blogs[(blogs.length-(i+1))].yaziEN : (lang == 'ES' ? blogs[(blogs.length-(i+1))].yaziES : (lang == 'FR' ? blogs[(blogs.length-(i+1))].yaziFR : (lang == 'DE' ? blogs[(blogs.length-(i+1))].yaziDE : (lang == 'IT' ? blogs[(blogs.length-(i+1))].yaziIT : (lang == 'AR' ? blogs[(blogs.length-(i+1))].yaziAR : (lang == 'PT' ? blogs[(blogs.length-(i+1))].yaziPT : blogs[(blogs.length-(i+1))].yaziRU)))))))));
+                
+                $("#twoBlogs").append(`
+                    <div class="media">
+                        <div class="media-left">
+                            <a id="`+blogs[(blogs.length-(i+1))]._id+`" href="/blogicerigi"><img height="128" width="128" src="`+blogs[(blogs.length-(i+1))].gorsel+`" alt=""
+                                    class="img-reponsive"></a>
+                        </div>
+                        <div class="media-body">
+                            <a id="`+blogs[(blogs.length-(i+1))]._id+`" href="/blogicerigi">
+                                <h4 style="color:#DAD370">` + (lang == 'TR' ? blogs[(blogs.length-(i+1))].baslikTR : (lang == 'EN' ? blogs[(blogs.length-(i+1))].baslikEN : (lang == 'ES' ? blogs[(blogs.length-(i+1))].baslikES : (lang == 'FR' ? blogs[(blogs.length-(i+1))].baslikFR : (lang == 'DE' ? blogs[(blogs.length-(i+1))].baslikDE : (lang == 'IT' ? blogs[(blogs.length-(i+1))].baslikIT : (lang == 'AR' ? blogs[(blogs.length-(i+1))].baslikAR : (lang == 'PT' ? blogs[(blogs.length-(i+1))].baslikPT :blogs[(blogs.length-(i+1))].baslikRU)))))))) + `</h4>
+                            </a>
+                            <p style="color: #F7F7EB;">`+quill.getText(0,50)+`...</p>
+                        </div>
+                    </div>
+                `);
+                $(".ql-toolbar").remove();
+            };
+            $(".howBlogText").click(function () {
+                let blogID = $(this).attr("id");
+                Cookies.set("blogID",blogID);
             });
-            quill.setContents((lang == 'TR' ? blogs[(blogs.length-(i+1))].yaziTR : (lang == 'EN' ? blogs[(blogs.length-(i+1))].yaziEN : (lang == 'ES' ? blogs[(blogs.length-(i+1))].yaziES : (lang == 'FR' ? blogs[(blogs.length-(i+1))].yaziFR : (lang == 'DE' ? blogs[(blogs.length-(i+1))].yaziDE : (lang == 'IT' ? blogs[(blogs.length-(i+1))].yaziIT : (lang == 'AR' ? blogs[(blogs.length-(i+1))].yaziAR : (lang == 'PT' ? blogs[(blogs.length-(i+1))].yaziPT : blogs[(blogs.length-(i+1))].yaziRU)))))))));
-            
-            $("#twoBlogs").append(`
-                <div class="media">
-                    <div class="media-left">
-                        <a id="`+blogs[(blogs.length-(i+1))]._id+`" href="/blogicerigi"><img height="128" width="128" src="`+blogs[(blogs.length-(i+1))].gorsel+`" alt=""
-                                class="img-reponsive"></a>
-                    </div>
-                    <div class="media-body">
-                        <a id="`+blogs[(blogs.length-(i+1))]._id+`" href="/blogicerigi">
-                            <h4 style="color:#DAD370">` + (lang == 'TR' ? blogs[(blogs.length-(i+1))].baslikTR : (lang == 'EN' ? blogs[(blogs.length-(i+1))].baslikEN : (lang == 'ES' ? blogs[(blogs.length-(i+1))].baslikES : (lang == 'FR' ? blogs[(blogs.length-(i+1))].baslikFR : (lang == 'DE' ? blogs[(blogs.length-(i+1))].baslikDE : (lang == 'IT' ? blogs[(blogs.length-(i+1))].baslikIT : (lang == 'AR' ? blogs[(blogs.length-(i+1))].baslikAR : (lang == 'PT' ? blogs[(blogs.length-(i+1))].baslikPT :blogs[(blogs.length-(i+1))].baslikRU)))))))) + `</h4>
-                        </a>
-                        <p style="color: #F7F7EB;">`+quill.getText(0,50)+`...</p>
-                    </div>
-                </div>
-            `);
-            $(".ql-toolbar").remove();
-        };
-        $(".howBlogText").click(function () {
-            let blogID = $(this).attr("id");
-            Cookies.set("blogID",blogID);
-        });
+        }
     </script>
 </body>
 
