@@ -254,6 +254,6 @@ io.on('connection', (socket) => {
 });
 // SOCKET REQUESTS END //
 
-http.listen(80, () => {
+http.listen(3000, () => {
     console.log('Sunucu istekleri ' + 80 + ' üzerinden dinleniyor');
 });
