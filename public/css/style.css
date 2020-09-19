@@ -1454,8 +1454,6 @@ a:focus, .btn:focus, button:focus, a:hover, .btn:hover, button:hover {
 
 /*----------------------------------------------------------------*/
 
-
-
 .recentpost_acc.recentpost_acc2 .recent_post_home {
   background-color: black;
   padding-top: 90px;
@@ -1550,6 +1548,7 @@ a:focus, .btn:focus, button:focus, a:hover, .btn:hover, button:hover {
   padding: 33px;
   position: relative;
 }
+
 .recent_post .inner .postText2 {
   background: url(/public/images/hastane2.jpg) no-repeat;
   height: 60vh;
@@ -1557,6 +1556,7 @@ a:focus, .btn:focus, button:focus, a:hover, .btn:hover, button:hover {
   padding: 33px;
   position: relative;
 }
+
 .recent_post .inner .postText3 {
   background: url(/public/images/hastane3.jpg) no-repeat;
   height: 60vh;
@@ -1621,7 +1621,7 @@ a:focus, .btn:focus, button:focus, a:hover, .btn:hover, button:hover {
 }
 
 .alperen_hakkinda .inner {
-  background: #F7F7EB ;
+  background: #F7F7EB;
 }
 
 .alperen_hakkinda .img img {
@@ -1666,11 +1666,11 @@ a:focus, .btn:focus, button:focus, a:hover, .btn:hover, button:hover {
   padding: 0 20px;
   font-family: 'ABeeZee', sans-serif;
   font-weight: bold;
-  color: #DAD370 ;
+  color: #DAD370;
 }
 
 .department_tab li a:hover {
-  color: #DAD370 ;
+  color: #DAD370;
   border: none;
   background: black;
   border: 1px solid #DAD370;
@@ -2157,6 +2157,7 @@ footer {
   background: black;
   background: url('/public/images/footer/bg.png');
 }
+
 .footerText {
   margin-top: 10px;
   font-family: 'ABeeZee', sans-serif;
@@ -2164,7 +2165,6 @@ footer {
   color: #F7F7EB;
   text-indent: 20px;
 }
-
 
 footer .heading {
   height: 64px;
@@ -2560,6 +2560,7 @@ footer .footer_bottom .copyright a {
   color: black;
   font-size: 18px;
 }
+
 .breadcrumbRow .inner ul li a {
   text-decoration: none;
   color: #DAD370;
@@ -3556,6 +3557,7 @@ footer .footer_bottom .copyright a {
   font-weight: normal;
   font-family: 'ABeeZee', sans-serif;
 }
+
 .firstOrderList li {
   text-align: left;
 }
@@ -3606,6 +3608,7 @@ footer .footer_bottom .copyright a {
   height: 56px;
   border-width: 8 0 8 0;
 }
+
 .float {
   position: fixed;
   width: 60px;
@@ -3624,17 +3627,18 @@ footer .footer_bottom .copyright a {
 .my-float {
   margin-top: 16px;
 }
-#analiz
-{
+
+#analiz {
   position: fixed;
   right: 0px;
   bottom: 0;
   width: 360px !important;
 }
-#analiz *:focus
-{
+
+#analiz *:focus {
   outline: none;
 }
+
 .analizwizard {
   max-width: 400px;
   /* position: absolute; */
@@ -3653,12 +3657,15 @@ footer .footer_bottom .copyright a {
   z-index: 999;
   right: 0;
 }
+
 .bg-gray {
   background-color: #F2F3F4;
 }
-#step1Header{
+
+#step1Header {
   margin-top: -50px;
 }
+
 .analizHeader {
   border: none;
   background-color: #1d82ff;
@@ -3667,17 +3674,18 @@ footer .footer_bottom .copyright a {
   width: 98%;
   text-align: center;
   outline: none;
-  margin-left:5%;
+  margin-left: 5%;
   float: left;
   cursor: pointer;
 }
-.analizHeader2{
+
+.analizHeader2 {
   position: fixed;
   bottom: 10px;
   right: 10px;
   border: none;
   background-color: #DAD370;
-  border-radius:24px;
+  border-radius: 24px;
   color: black;
   font-size: 16px;
   width: 98%;
@@ -3689,18 +3697,19 @@ footer .footer_bottom .copyright a {
   width: 280px;
   height: 50px;
 }
-#hideShowAnaliz
-{
+
+#hideShowAnaliz {
   position: relative;
   float: left;
   font-size: 32px;
   margin-left: -20px;
-  margin-top:-15px;
-  cursor:pointer;
-  color:#34495E;
+  margin-top: -15px;
+  cursor: pointer;
+  color: #34495E;
   font-size: 25px;
   padding-right: 15px;
 }
+
 .genderImg {
   height: 40%;
   width: 40%;
@@ -3782,7 +3791,7 @@ footer .footer_bottom .copyright a {
   outline: none;
   transition: 0.2s;
   float: left;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .prevBtn:hover {
@@ -3794,7 +3803,7 @@ footer .footer_bottom .copyright a {
   color: #5D6D7E;
   font-size: 12px;
   outline: none;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 #notSureBtn {
@@ -3804,7 +3813,7 @@ footer .footer_bottom .copyright a {
   color: #5D6D7E;
   font-size: 12px;
   outline: none;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 #notSureBtn:hover {
@@ -3816,7 +3825,7 @@ footer .footer_bottom .copyright a {
   color: #5D6D7E;
   font-size: 12px;
   outline: none;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .headerAnaliz {
@@ -3827,7 +3836,8 @@ footer .footer_bottom .copyright a {
 #headerAnaliz * {
   font-size: 20px;
 }
-.yasBtn{
+
+.yasBtn {
   height: 50px;
   width: 100%;
   box-shadow: 0px 0px 5px 1px rgb(185, 186, 187);
@@ -3837,27 +3847,8 @@ footer .footer_bottom .copyright a {
   border: none;
   transition: 0.2s;
 }
-.yasBtn:hover{
-  height: 50px;
-  width: 100%;
-  box-shadow: 0px 0px 6px 1px #6c757d;
-  margin-top: 5%;
-  background-color: #F2F3F4;
-  outline: none;
-  border: none;
-  transition: 0.2s;
-}
-.yasBtn2{
-  height: 50px;
-  width: 100%;
-  box-shadow: 0px 0px 5px 1px rgb(185, 186, 187);
-  margin-top: 5%;
-  background-color: #F2F3F4;
-  outline: none;
-  border: none;
-  transition: 0.2s;
-}
-.yasBtn2:hover{
+
+.yasBtn:hover {
   height: 50px;
   width: 100%;
   box-shadow: 0px 0px 6px 1px #6c757d;
@@ -3868,7 +3859,7 @@ footer .footer_bottom .copyright a {
   transition: 0.2s;
 }
 
-.nextBtn1{
+.yasBtn2 {
   height: 50px;
   width: 100%;
   box-shadow: 0px 0px 5px 1px rgb(185, 186, 187);
@@ -3878,7 +3869,8 @@ footer .footer_bottom .copyright a {
   border: none;
   transition: 0.2s;
 }
-.nextBtn1:hover{
+
+.yasBtn2:hover {
   height: 50px;
   width: 100%;
   box-shadow: 0px 0px 6px 1px #6c757d;
@@ -3888,7 +3880,30 @@ footer .footer_bottom .copyright a {
   border: none;
   transition: 0.2s;
 }
-.ilacInput{
+
+.nextBtn1 {
+  height: 50px;
+  width: 100%;
+  box-shadow: 0px 0px 5px 1px rgb(185, 186, 187);
+  margin-top: 5%;
+  background-color: #F2F3F4;
+  outline: none;
+  border: none;
+  transition: 0.2s;
+}
+
+.nextBtn1:hover {
+  height: 50px;
+  width: 100%;
+  box-shadow: 0px 0px 6px 1px #6c757d;
+  margin-top: 5%;
+  background-color: #F2F3F4;
+  outline: none;
+  border: none;
+  transition: 0.2s;
+}
+
+.ilacInput {
   height: 50px;
   width: 100%;
   box-shadow: 0px 0px 5px 1px rgb(185, 186, 187);
@@ -3901,8 +3916,8 @@ footer .footer_bottom .copyright a {
   padding: 10px;
   border-radius: 3px;
 }
-#completeBtn
-{
+
+#completeBtn {
   background: #2e5ba5;
   width: 30%;
   border: none;
@@ -3912,40 +3927,204 @@ footer .footer_bottom .copyright a {
   color: white;
   font-size: 16px;
 }
-#closeBtn{
+
+#closeBtn {
   width: 100%;
-  border:none;
-  color:white;
+  border: none;
+  color: white;
   background-color: #C0392B;
-  margin-top:10%
+  margin-top: 10%
 }
-.footerBg
-{
+
+.footerBg {
   background-image: url(/public/images/hospitalBG.jpg);
-  -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%; 
-  -webkit-background-size: cover; 
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   max-width: 100%;
+}
 
-}
-.head1{
-  font-size: 32px !important;
-}
-.head2{
-  font-size: 24px !important;
-}
-.head3{
+#bannerh4 {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  line-height: 1.2;
+  margin: 0 20px 0;
   font-size: 18px !important;
 }
-.head4{
-  font-size: 16px !important;
+
+#bannerh2 {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  margin: 0 20px 0;
+  line-height: 1.2;
+  font-weight: bold;
 }
-.head5{
-  font-size: 12px !important;
+
+.tip1head {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px !important;
+  line-height: 1;
 }
+
+.tip2head {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 18px !important;
+  line-height: 1;
+}
+
+#ayricaliklarimizH2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px !important;
+  margin: 0;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+#ayricaliklarimizH2::after {
+  content: '';
+  width: 85px;
+  height: 1px;
+  background: #DAD701;
+  display: block;
+  margin: 10px auto 0;
+}
+
+#ayricaliklarimizh31 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #DAD370;
+  font-size: 24px !important;
+}
+
+#ayricaliklarimizh31::after {
+  content: '';
+  width: 85px;
+  height: 1px;
+  background: black;
+  display: block;
+  margin: 13px 0 0;
+}
+
+#ayricaliklarimizh36 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #DAD370;
+  font-size: 24px !important;
+}
+
+#ayricaliklarimizh36::after {
+  content: '';
+  width: 85px;
+  height: 1px;
+  background: black;
+  display: block;
+  margin: 13px 0 0 !important;
+}
+
+#hakkimizdaMainh3 {
+  font-size: 24px !important;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#hakkimizdaMainh2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px !important;
+  margin: 0;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+#hakkimizdaMainh2::after {
+  content: '';
+  width: 85px;
+  height: 1px;
+  background: #DAD370;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.head3about {
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  line-height: 36px;
+  margin: 0 0 25px;
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+#oncesiSonrasiMainh5 {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  line-height: 1;
+  font-weight: 300;
+}
+
+#oncesiSonrasiMainh2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px !important;
+  margin: 0;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.mainstyle1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px !important;
+  margin: 0;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+#oncesiSonrasiSubH51 {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  line-height: 1;
+  font-weight: 300;
+  font-size: 20px !important;
+}
+
+#oncesiSonrasiSubH51::after {
+  margin-left: 0 !important;
+  content: '';
+  width: 85px;
+  height: 1px;
+  background: #DAD701;
+  display: block;
+  margin: 10px auto 0;
+}
+#oncesiSonrasiSubH5 {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  line-height: 1;
+  font-weight: 300;
+  font-size: 20px !important;
+}
+
+#oncesiSonrasiSubH2::after {
+  margin-left: 0 !important;
+  content: '';
+  width: 85px;
+  height: 1px;
+  background: #DAD701;
+  display: block;
+  margin: 10px auto 0;
+}
+
 /*Service Tab End*/
