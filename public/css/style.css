@@ -3933,4 +3933,19 @@ footer .footer_bottom .copyright a {
   max-width: 100%;
 
 }
+.head1{
+  font-size: 32px !important;
+}
+.head2{
+  font-size: 24px !important;
+}
+.head3{
+  font-size: 18px !important;
+}
+.head4{
+  font-size: 16px !important;
+}
+.head5{
+  font-size: 12px !important;
+}
 /*Service Tab End*/
